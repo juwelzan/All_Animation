@@ -18,11 +18,14 @@ class CustomPageRoute {
               math.pow(MediaQuery.of(context).size.width, 2),
         );
         return ClipPath(
+          ///aita custom Clipper  ↓↓↓↓↓ class
           clipper: CustomClippers(
             fraction: animation.drive(CurveTween(curve: Curves.easeIn)).value,
             center: center,
             maxRadius: maxRadius,
           ),
+
+          ///aita custom Clipper  ↑↑↑↑↑ class
           child: child,
         );
       },

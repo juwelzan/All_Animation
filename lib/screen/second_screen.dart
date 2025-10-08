@@ -5,6 +5,18 @@ class SecondScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(), backgroundColor: Colors.deepPurple);
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Second Screen"),
+        centerTitle: true,
+        backgroundColor: Colors.deepPurple,
+        titleTextStyle: TextStyle(
+          color: Colors.white,
+          fontSize: 30,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+      backgroundColor: Colors.deepPurple,
+    );
   }
 }

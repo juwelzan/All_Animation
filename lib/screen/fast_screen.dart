@@ -14,6 +14,16 @@ class _FastScreenState extends State<FastScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Fast Screen"),
+        centerTitle: true,
+        backgroundColor: Colors.pink,
+        titleTextStyle: TextStyle(
+          color: Colors.white,
+          fontSize: 30,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
       backgroundColor: Colors.pink,
       body: Center(
         child: ElevatedButton(
